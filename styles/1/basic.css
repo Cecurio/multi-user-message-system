@@ -1,0 +1,224 @@
+@CHARSET "UTF-8";
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	width: 960px;
+	/**/
+	margin:0 auto;
+	background: #fff;
+	font-size: 14px;
+	/*border: 1px solid red;*/
+}
+
+ul {
+	/*使前面没有标号*/
+	list-style-type: none;
+}
+
+h2 {
+	font-size: 14px;
+	background:#eee;
+	height: 25px;
+	
+	line-height: 25px;
+	/*左边缩进*/
+	text-indent: 10px;
+}
+
+#header {
+	width: auto;
+	height: 150px;
+	border: 2px solid #ccc;
+	margin: 10px 0;
+}
+
+#header h1 {
+	font-size: 12px;
+	width: 210px;
+	height: 39px;
+	/*background:url('images/001.png');*/
+	background-image: url(../../images/logo1.png);
+	margin: 40px 0 0 50px;
+	/*border: 2px solid red;*/
+}
+
+#header h1 a {
+	width: 210px;
+	height: 39px;
+	display: block;
+	text-indent: -9999px;
+}
+
+#header ul {
+	text-align: right;
+	padding: 30px 50px 0 0;
+}
+
+#header ul li {
+	/*使li的内容横着放*/
+	display: inline;
+}
+
+#header ul li a {
+	/*使超链接没有下划线*/
+	text-decoration: none;
+	color: #333;
+} 
+
+#header ul li a:hover {
+	/*超链接：使鼠标放上去显示是红色*/
+	color: #f00;
+	text-decoration: underline;
+}
+#header ul li strong.noread {
+	background: url(../../images/noread.gif) no-repeat left center;
+	padding: 0 0 0 18px;
+}
+#header ul li strong.read {
+	background: url(../../images/meg.gif) no-repeat left center;
+	padding: 0 0 0 18px;
+}
+#footer {
+	clear: both;
+	width: auto;
+	height: 60px;
+	text-align: center;
+	/*上右下左*/
+	padding: 10px 0 0 0;
+	/*border: 2px solid #ccc;*/
+}
+
+#footer p {
+	font: 16px Microsoft YaHei;
+	letter-spacing: 1px;
+	padding: 5px 0 0 0;
+}
+
+#footer p span {
+	color: #06f;
+}
+
+
+
+/*分页开始*/
+#page_num {
+	height: 20px;
+	clear: both;
+	padding: 20px 0;
+	position: relative;
+}
+#page_num ul {
+	position: absolute;
+	right: 30px;
+	height: 20px;
+}
+#page_num ul li {
+	float: left;
+	width: 24px;
+	height: 20px;
+}
+#page_num ul li a {
+	display: block;
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	border: 1px solid #333;
+	text-align: center;
+	text-decoration: none;
+	color: #333;
+}
+#page_num ul li a:hover,#page_num ul li a.selected{
+	background: #666;
+	font-weight: bold;
+	color:white;
+}
+
+
+
+/*文章分页*/
+#page_text {
+	height: 20px;
+	clear: both;
+	padding: 20px 0;
+}
+#page_text ul {
+	text-align: center;
+}
+#page_text ul li {
+	display: inline;
+}
+#page_text ul li a {
+	/*修改字体颜色，点击超链接后不会变颜色*/
+	color: #333;
+}
+/*分页结束*/
+
+
+#member {
+	width: auto;
+	height: 600px;
+	border: 2px solid #ccc;
+	font-size: 12px;
+}
+#member h2 {
+	text-indent: 0px;
+	text-align: center;
+	height: 30px;
+	line-height: 30px;
+}
+#member #member_sidebar {
+	height: 550px;
+	width: 300px;
+	border: 1px dashed #999;
+	margin: 15px;
+	float: left;
+}
+
+#member #member_sidebar dl {
+	width: 250px;
+	background: red;
+	margin: 15px auto;
+}
+#member #member_sidebar dl dt {
+	background-color: #999;
+	height: 40px;
+	line-height: 40px;
+	font-weight: bold;
+	text-align: center;
+	color: #fff;
+}
+#member #member_sidebar dl dd {
+	background-color: #eee;
+	height: 40px;
+	line-height: 40px;
+	font-weight: bold;
+	text-align: center;
+}
+
+#member #member_sidebar dl dd a {
+	display: block;
+	color: #333;
+	text-decoration: none;
+}
+#member #member_sidebar dl dd a:hover {
+	background: #ccc;
+}
+
+#member #member_main {
+	height: 550px;
+	width: 580px;
+	margin: 15px;
+	border: 1px dashed #999;
+	float: right;
+}
+
+
+
+
+
+
+
+
